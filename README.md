@@ -1,3 +1,5 @@
+[![CI](https://github.com/ai-product-manager/functions-from-zero/actions/workflows/main.yml/badge.svg)](https://github.com/ai-product-manager/functions-from-zero/actions/workflows/main.yml)
+
 # functions-from-zero
 A repo template
 
