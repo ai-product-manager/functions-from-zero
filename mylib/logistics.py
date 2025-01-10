@@ -32,3 +32,17 @@ def distance_between_two_points(city1, city2):
     coords_1 = cities[city1]
     coords_2 = cities[city2]
     return distance.distance(coords_1, coords_2).km
+
+
+# build a function to calculate the time it takes to travel between two cities by car assume 80 km/h
+def time_between_two_points(city1, city2, speed=80):
+    """
+    Calculate the time it takes to travel between two cities assuming 80 km/h.
+
+    :param city1: The first city.
+    :param city2: The second city.
+    :param speed: The speed in km/h.
+    :return: The time it takes to travel between the two cities in hours.
+    """
+    dist = distance_between_two_points(city1, city2)
+    return dist / speed
