@@ -22,14 +22,18 @@ def client():
 
 # build a test for distance_between_two_points endpoint
 def test_distance_endpoint(client):
-    response = client.post("/distance", json={"city1": "Lima", "city2": "Arequipa"})
+    response = client.post(
+        "/distance", json={"city1": {"name": "Lima"}, "city2": {"name": "Arequipa"}}
+    )
     assert response.status_code == 200
     assert response.json() == {"distance": 765.3868858019406}
 
 
 # build a test for time_between_two_points endpoint
 def test_time_endpoint(client):
-    response = client.post("/time", json={"city1": "Lima", "city2": "Arequipa"})
+    response = client.post(
+        "/time", json={"city1": {"name": "Lima"}, "city2": {"name": "Arequipa"}}
+    )
     assert response.status_code == 200
     assert response.json() == {"time": 9.567336072524258}
 
