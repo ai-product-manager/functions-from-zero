@@ -19,3 +19,5 @@ y = 2
 #import ipdb; ipdb.set_trace()
 print(x + y)
 ```
+
+## Step 3: Build a library and use it
