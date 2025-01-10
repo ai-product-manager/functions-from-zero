@@ -21,3 +21,11 @@ print(x + y)
 ```
 
 ## Step 3: Build a library and use it
+
+## Step 4: Docker
+```
+docker build . 
+docker image ls 
+#find image 
+docker run -p 127.0.0.1:8080:8080 93fa55efa692
+```
