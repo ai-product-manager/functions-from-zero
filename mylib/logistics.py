@@ -32,4 +32,3 @@ def distance_between_two_points(city1, city2):
     coords_1 = cities[city1]
     coords_2 = cities[city2]
     return distance.distance(coords_1, coords_2).km
-
