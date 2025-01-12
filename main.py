@@ -47,7 +47,7 @@ async def keywords(page: CityRequest):
 
     Returns back a list of keywords
     """
-    return {"keywords": get_wiki_keywords(page.name)}
+    return {"list": get_wiki_keywords(page.name)}
 
 
 if __name__ == "__main__":
